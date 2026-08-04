@@ -79,7 +79,7 @@ export async function processImage(
     const data = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const px = data.data;
     for (let i = 0; i < px.length; i += 4) {
-      const lum = 0.299 * px[i] + 0.587 * px[i + 1] + 0.114 * px[i + 2];
+      const lum = 0.299 * (px[i] ?? 0) + 0.587 * (px[i + 1] ?? 0) + 0.114 * (px[i + 2] ?? 0);
       if (whiten && lum > 170) {
         px[i] = px[i + 1] = px[i + 2] = 255;
       } else if (darkenInk && lum < 120) {
