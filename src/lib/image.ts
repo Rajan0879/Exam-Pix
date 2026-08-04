@@ -1,7 +1,7 @@
 export type ProcessOptions = {
   width: number;
   height: number;
-  maxKb?: number;
+  maxKb?: number | undefined;
   format?: "image/jpeg" | "image/png" | "image/webp";
   background?: string;
   fit?: "cover" | "contain";
