@@ -58,7 +58,7 @@ export const Route = createFileRoute("/exams/$slug")({
 });
 
 function ExamDetail() {
-  const { exam } = Route.useLoaderData();
+  const { exam } = Route.useLoaderData() as { exam: Exam };
   const related = exams.filter((e) => e.slug !== exam.slug && e.category === exam.category).slice(0, 3);
   const fallbackRelated = exams.filter((e) => e.slug !== exam.slug).slice(0, 3);
   const relatedExams = related.length > 0 ? related : fallbackRelated;
