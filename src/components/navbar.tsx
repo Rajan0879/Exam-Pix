@@ -63,7 +63,7 @@ export function Navbar() {
             className="min-h-11 min-w-11 rounded-xl lg:hidden"
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <Menu className="size-5" /> : <Menu className="size-5" />}
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </Button>
         </div>
       </nav>
