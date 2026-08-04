@@ -10,11 +10,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { exams, getExam } from "@/lib/exams";
+import { exams, getExam, type Exam } from "@/lib/exams";
 import { blogPosts } from "@/lib/blogs";
 
 export const Route = createFileRoute("/exams/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { exam: Exam } => {
     const exam = getExam(params.slug);
     if (!exam) throw notFound();
     return { exam };
