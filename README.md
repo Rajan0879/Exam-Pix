@@ -1,837 +1,154 @@
 # Exam Docs Pro
 
-Use this as a single master prompt for Lovable.dev. It is written like a Product Design Brief so Lovable generates a premium UI instead of a basic CRUD website.
+**ExamPix – India's All-in-One Government Exam Photo & Document Portal**
 
-Lovable.dev Prompt
+Exam Docs Pro is a web application designed to help students prepare photographs, signatures, thumb impressions, and other documents required for Indian government examinations.
 
-Project
+The platform provides easy-to-use tools to resize, crop, compress, and convert images according to specific examination requirements.
 
-Design a modern, premium, SEO-first web application called ExamPix (temporary name), India's all-in-one Government Exam Photo & Document Portal.
+## ✨ Features
 
-The website helps students prepare photos, signatures, thumb impressions, passport photos, and other required documents for Indian Government Exams within seconds.
+- **Exam-Based Photo Resizing** – Resize photos according to specific government exam requirements.
+- **Signature Resizing** – Adjust signature dimensions and file sizes.
+- **Image Compression** – Reduce image file sizes while maintaining quality.
+- **Passport Photo Maker** – Prepare passport-size photographs.
+- **Image Cropping** – Crop images with custom dimensions and aspect ratios.
+- **Background Removal** – Remove or change image backgrounds.
+- **Image Conversion** – Convert images into supported formats.
+- **Exam Search** – Quickly find document requirements for different examinations.
+- **Live Preview** – Preview processed images before downloading.
+- **Mobile-Friendly Interface** – Use document tools across desktop, tablet, and mobile devices.
 
-This is NOT just an image resizer.
+## 🎯 Supported Exams
 
-The experience should feel closer to Stripe, Linear, Notion, Vercel, Clerk, Dropbox, and Canva—minimal, premium, clean, fast, and trustworthy.
+The platform is designed for students preparing for various competitive examinations, including:
 
-The design should immediately communicate:
+- SSC CGL
+- SSC CHSL
+- SSC GD
+- RRB NTPC
+- UPSC
+- IBPS
+- NEET
+- JEE
 
-Professional
+More examinations and document requirements can be added over time.
 
-Secure
+## 🛠️ Available Tools
 
-Fast
+| Tool | Description |
+|---|---|
+| Photo Resize | Resize photographs to required dimensions |
+| Signature Resize | Prepare signatures for online applications |
+| Image Compressor | Reduce image file size |
+| Passport Photo | Create passport-size photographs |
+| Background Remover | Remove or change image backgrounds |
+| Image Cropper | Crop images with custom dimensions |
+| Image Converter | Convert images into different formats |
 
-Government Exam Focused
+## 🎨 UI & Design
 
-Easy for non-technical users
+The application follows a modern, clean, and responsive design approach.
 
-Mobile-first
+- Minimal and user-friendly interface
+- Responsive layouts
+- Consistent design system
+- Reusable UI components
+- Smooth interactions
+- Accessible navigation
+- Mobile-first experience
 
-SEO-first
+## ⚙️ Tech Stack
 
-Target Users
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide Icons
+- **Animations:** Framer Motion
+- **Form Management:** React Hook Form
 
-Primary audience:
+## 🚀 Getting Started
 
-Students preparing for Government Exams
+Follow these steps to run the project locally.
 
-Age 16–35
+### Prerequisites
 
-Mostly mobile users
+- Node.js
+- npm
+- Git
 
-Many are first-time visitors
+### Installation
 
-Need to complete photo resizing quickly without confusion
+1. Clone the repository:
 
-The UX must require almost zero learning.
+   ```bash
+   git clone <your-repository-url>
+   ```
 
-Overall Design Style
+2. Navigate to the project directory:
 
-Create a clean SaaS-style interface.
+   ```bash
+   cd <repository-name>
+   ```
 
-Avoid old government website styles.
+3. Install dependencies:
 
-Avoid excessive gradients.
+   ```bash
+   npm install
+   ```
 
-Avoid flashy animations.
+4. Start the development server:
 
-Use generous whitespace.
-
-Rounded corners (12–16px).
-
-Soft shadows.
-
-Smooth hover effects.
-
-Large readable typography.
-
-Minimal icons.
-
-Consistent spacing.
-
-The design should look trustworthy enough that users feel comfortable uploading their documents.
-
-Color Palette
-
-Primary
-
-Blue
-
-#2563EB
-
-
-Secondary
-
-Emerald Green
-
-#10B981
-
-
-Accent
-
-Orange
-
-#F59E0B
-
-
-Success
-
-#22C55E
-
-
-Danger
-
-#EF4444
-
-
-Background
-
-#F8FAFC
-
-
-Cards
-
-#FFFFFF
-
-
-Text Primary
-
-#111827
-
-
-Text Secondary
-
-#6B7280
-
-
-Borders
-
-#E5E7EB
-
-
-Hover
-
-#EFF6FF
-
-
-The overall appearance should feel clean and premium rather than colorful.
-
-Typography
-
-Use
-
-Inter
-
-or
-
-Plus Jakarta Sans
-
-Hierarchy
-
-Hero
-
-56px
-
-Heading
-
-36px
-
-Section
-
-28px
-
-Card Title
-
-20px
-
-Body
-
-16px
-
-Caption
-
-14px
-
-Buttons
-
-16px SemiBold
-
-Icons
-
-Use Lucide Icons.
-
-Icons should be minimal.
-
-Examples
-
-Upload
-
-Search
-
-Download
-
-Crop
-
-Camera
-
-Shield
-
-Image
-
-Check
-
-Compress
-
-Passport
-
-File
-
-Blog
-
-FAQ
-
-Components
-
-Design reusable components for:
-
-Navbar
-
-Footer
-
-Search Bar
-
-Exam Card
-
-Tool Card
-
-Blog Card
-
-Feature Card
-
-Upload Box
-
-Drag & Drop Upload
-
-Image Cropper Layout
-
-Preview Panel
-
-Download Button
-
-Primary Button
-
-Secondary Button
-
-Input Fields
-
-Dropdown
-
-Breadcrumb
-
-Pagination
-
-Toast
-
-Loading Skeleton
-
-FAQ Accordion
-
-Modal
-
-Ad Placeholder
-
-Notification Badge
-
-Empty State
-
-404 State
-
-Navbar
-
-Sticky navigation.
-
-Logo on left.
-
-Menus:
-
-Home
-
-Search Exams
-
-All Exams
-
-Tools
-
-Blogs
-
-About
-
-Contact
-
-CTA Button
-
-"Resize Now"
-
-On mobile
-
-Hamburger menu.
-
-Hero Section
-
-The homepage hero must instantly explain the product.
-
-Large heading
-
-Resize Photo & Signature for Government Exams in Seconds
-
-Subtitle
-
-Search your exam, upload your photo, and download perfectly resized documents instantly.
-
-Primary CTA
-
-Search Exam
-
-Secondary CTA
-
-Manual Resize
-
-Large centered search box.
-
-Placeholder
-
-"Search SSC CGL, UPSC, NEET..."
-
-Show popular searches below.
-
-Homepage Sections
-
-Design these sections beautifully.
-
-Hero
-
-Search Exam
-
-Popular Exams
-
-Popular Tools
-
-Why Choose Us
-
-Latest Exam Updates
-
-Latest Blogs
-
-Testimonials
-
-FAQ
-
-Newsletter
-
-Footer
-
-Every section should have proper spacing and visual hierarchy.
-
-Popular Exams
-
-Grid cards
-
-Examples
-
-SSC CGL
-
-SSC CHSL
-
-SSC GD
-
-RRB NTPC
-
-UPSC
-
-IBPS
-
-NEET
-
-JEE
-
-Cards should include
-
-Logo/Icon
-
-Exam Name
-
-Status
-
-Quick Resize Button
-
-Popular Tools
-
-Cards
-
-Photo Resize
-
-Signature Resize
-
-Compress Image
-
-Passport Photo
-
-Background Remover
-
-Crop Image
-
-Image Converter
-
-Cards should have modern icons and subtle hover animation.
-
-Search Page
-
-Large search bar.
-
-Autocomplete.
-
-Categories.
-
-Recent searches.
-
-Trending exams.
-
-Filter chips.
-
-Responsive grid.
-
-Exam Detail Page
-
-This is the most important page.
-
-Layout
-
-Left
-
-Exam Details
-
-Requirements
-
-Instructions
-
-FAQ
-
-Right
-
-Sticky Upload Panel
-
-Upload Photo
-
-Upload Signature
-
-Upload Thumb Impression (if required)
-
-Generate Button
-
-Preview
-
-Download
-
-Include
-
-Notification banner
-
-Important instructions
-
-Allowed formats
-
-Photo size
-
-Signature size
-
-File size
-
-Thumb size
-
-Required dimensions
-
-Common mistakes
-
-Related exams
-
-Related blogs
-
-Manual Resize Tool
-
-Modern workspace.
-
-Two-column layout.
-
-Left
-
-Upload
-
-Crop
-
-Settings
-
-Right
-
-Live Preview
-
-Controls
-
-Width
-
-Height
-
-Pixels
-
-CM
-
-Aspect Ratio
-
-Target KB
-
-Output Format
-
-Download
-
-Compress Image
-
-Simple clean layout.
-
-Upload
-
-Slider
-
-Target KB
-
-Preview
-
-Compression Comparison
-
-Download
-
-Signature Tool
-
-Upload
-
-Auto Crop
-
-White Background
-
-Black Enhancement
-
-Target KB
-
-Preview
-
-Download
-
-Passport Photo
-
-Upload
-
-Auto Face Detection Placeholder
-
-Background Options
-
-Passport Preview
-
-Multiple Copies Layout
-
-Download
-
-Background Remover
-
-Large upload card.
-
-Preview comparison.
-
-Buttons
-
-Transparent
-
-White
-
-Blue
-
-Custom
-
-Download
-
-Blog
-
-Modern article layout.
-
-Hero Image
-
-Reading Progress
-
-Table of Contents
-
-Related Articles
-
-CTA
-
-Resize Photo Now
-
-Dashboard (Optional)
-
-Modern analytics.
-
-Cards
-
-Downloads
-
-Saved Exams
-
-History
-
-Bookmarks
-
-Recently Used
-
-Admin Dashboard
-
-Premium admin interface.
-
-Sidebar.
-
-Analytics.
-
-Visitors
-
-Downloads
-
-Popular Exams
-
-Revenue
-
-Recent Blogs
-
-Notifications
-
-Charts
-
-Tables
-
-Mobile Experience
-
-Mobile-first.
-
-Bottom navigation.
-
-Tabs
-
-Home
-
-Search
-
-Tools
-
-Blogs
-
-Menu
-
-Upload should be thumb-friendly.
-
-Large tap targets.
-
-Sticky bottom CTA.
-
-Animations
-
-Use Framer Motion style interactions.
-
-Subtle fade
-
-Slide
-
-Scale
-
-Hover elevation
-
-Button ripple
-
-Loading shimmer
-
-Nothing excessive.
-
-Performance first.
-
-UX Principles
-
-The user should reach the upload tool within 2 clicks.
-
-The user should never wonder what to do next.
-
-Every page should contain a clear CTA.
-
-Display upload progress.
-
-Display preview instantly.
-
-Show success states.
-
-Show helpful error messages.
-
-Guide beginners.
-
-Trust Elements
-
-Show
-
-✓ Files processed securely
-
-✓ Files automatically deleted
-
-✓ No signup required
-
-✓ Fast processing
-
-✓ Mobile friendly
-
-✓ Trusted by thousands of students
-
-SEO Structure
-
-Design pages with SEO-friendly layouts.
-
-Include:
-
-Breadcrumbs
-
-Table of Contents
-
-FAQ Schema sections
-
-Related Articles
-
-Internal Links
-
-Related Exams
-
-CTA blocks
-
-Proper heading hierarchy
-
-Accessibility
-
-High contrast.
-
-Keyboard navigation.
-
-ARIA-friendly.
-
-Readable typography.
-
-Responsive on all devices.
-
-Design References
-
-Take inspiration from:
-
-Stripe
-
-Linear
-
-Vercel
-
-Clerk
-
-Dropbox
-
-Canva
-
-Figma Community
-
-Notion
-
-Tailwind UI
-
-shadcn/ui
-
-Do not copy these brands directly—use them as inspiration for layout quality, spacing, typography, and interactions.
-
-Tech Stack
-
-Design for:
-
-Next.js App Router
-
-TypeScript
-
-Tailwind CSS
-
-shadcn/ui
-
-Framer Motion
-
-Lucide Icons
-
-React Hook Form
-
-Responsive desktop, tablet, and mobile
-
-Deliverables
-
-Generate:
-
-Complete design system (colors, typography, spacing, shadows, buttons, forms).
-
-Responsive layouts for every page in the site architecture.
-
-Reusable UI components.
-
-Light theme with optional dark mode support.
-
-Modern SaaS-quality interface with smooth interactions.
-
-Clean, accessible, conversion-focused UX.
-
-Consistent design tokens and component variants.
-
-Production-ready React component structure following Next.js App Router conventions.
-
-The final result should feel like a premium Indian EdTech + SaaS platform, optimized for SEO, high conversion, trust, and ease of use, making it the go-to destination for students preparing documents for government exams.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://exam-pix-docs.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/de690b13-e897-42d5-9d78-b3cd7259bb27).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+
+   ```text
+   http://localhost:3000
+   ```
+
+## 📁 Project Structure
+
+The application follows a modular and reusable component-based architecture using Next.js App Router.
+
+```text
+src/
+├── app/
+├── components/
+├── hooks/
+├── lib/
+├── services/
+├── types/
+└── styles/
 ```
+
+## 🔒 Privacy & Security
+
+Document privacy is an important part of the platform.
+
+- Secure document handling
+- No mandatory account registration for basic tools
+- Privacy-focused file processing
+- Temporary file handling
+
+*Actual file retention and deletion depend on the implemented processing workflow.*
+
+## 📌 Project Goals
+
+The main goal of Exam Docs Pro is to simplify document preparation for Indian government exam applications by bringing commonly needed image-processing tools and exam-specific requirements into one platform.
+
+## 🤝 Contributing
+
+Contributions, suggestions, and bug reports are welcome.
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
+
+## 📄 License
+
+Add your preferred open-source license to this project.
